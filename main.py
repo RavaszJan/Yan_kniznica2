@@ -3,14 +3,14 @@ import psycopg2
 from author import Author
 from book import Book
 from genre import Genre
-conn = psycopg2(
+conn = psycopg2.connect(
     dbname = 'b9jo7llogkstcaaztxv7',
     user = 'u1ftxroeagq7omvgbxfe',
     password = 'pwG3KMVEcx4mZiGSgRXQjf5JmIYTE3',
     host = 'b9jo7llogkstcaaztxv7-postgresql.services.clever-cloud.com',
     port = '50013'
 )
-
+print(conn)
 cursor = conn.cursor()
 
 
